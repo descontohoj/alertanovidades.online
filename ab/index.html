@@ -1,75 +1,79 @@
 
-<!DOCTYPE html>
-<html lang="pt-br"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="https://quizpremiadobrasil.online/ambv/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://quizpremiadobrasil.online/ambv/favicon.ico">
-
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script async="" src="js/fbevents.js"></script><script async="" src="js/fbevents_1.js"></script><script src="js/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <title>Avaliação Ambev</title>
-    </head><header>
+<!-- Meta Pixel Code -->
+
+<!-- End Meta Pixel Code -->
+
+ 
+  
+    </head><body><header>
         
         
       <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0)"></i>
-
-      <img src="./Logo_Ambev.png" alt="">
+      <!-- <img src="assets/images/google_logo.svg" alt=""> -->
+      <img src="images/Logo_Ambev.png" alt="">
       <span id="saldo" style="margin-left: auto"></span>
     </header>
     
     
     <main>
 
-      <div class="card pergunta01" id="pergunta01" style="display: block;" bis_skin_checked="1">
-        <div class="card__logo" bis_skin_checked="1">
-          <img src="./01.jpg" alt="">
+      <div class="card pergunta01" id="pergunta01">
+        <div class="card__logo">
+          <img src="images/01.jpg" alt="">
         </div>
-        <div class="card__satisfacao" bis_skin_checked="1">
+        <div class="card__satisfacao">
           <h2>De 0 a 5, como você avaliaria a marca Ambev?</h2>
-          <div class="card__gradeContainer" bis_skin_checked="1">
-            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)" bis_skin_checked="1">
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star1"></i>
             </div>
-            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star2"></i>
             </div>
-            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star3"></i>
             </div>
-            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star4"></i>
             </div>
-            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star5"></i>
             </div>
           </div>
-          <div class="card__gradeDescricao" bis_skin_checked="1">
+          <div class="card__gradeDescricao">
             <p>Muito ruim</p>
             <p>Muito bom</p>
           </div>
         </div>
-        <div class="card__resposta" bis_skin_checked="1">
+        <div class="card__resposta">
           <h2>
             Você já experimentou algum desses produtos ?
           </h2>
-          <div class="resposta__gradeContainer" bis_skin_checked="1">
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">SKOL ZERO ALCOOL</p>
             </div>
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">ANTARCTICA</p>
             </div>
 
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
             <p onclick="scrollToDown()">HEINEKEN</p>
           </div>
 
-          <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
           <p onclick="scrollToDown()">BOHEMIA</p>
         </div>
 
@@ -81,45 +85,45 @@
           Enviar avaliação
         </button>
       </div>
-      <div class="card pergunta02" id="pergunta02" style="display: none" bis_skin_checked="1">
-        <div class="card__logo" bis_skin_checked="1">
-          <img src="./022.webp" alt="">
+      <div class="card pergunta02" id="pergunta02" style="display: none">
+        <div class="card__logo">
+          <img src="images/022.webp" alt="">
         </div>
-        <div class="card__satisfacao" bis_skin_checked="1">
+        <div class="card__satisfacao">
           <h2>
             De 0 a 5, como você avaliaria a qualidade dos produtos Ambev que já experimentou?
           </h2>
-          <div class="card__gradeContainer" bis_skin_checked="1">
-            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)" bis_skin_checked="1">
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star1"></i>
             </div>
-            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star2"></i>
             </div>
-            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star3"></i>
             </div>
-            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star4"></i>
             </div>
-            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star5"></i>
             </div>
           </div>
-          <div class="card__gradeDescricao" bis_skin_checked="1">
+          <div class="card__gradeDescricao">
             <p>Muito ruim</p>
             <p>Muito bom</p>
           </div>
         </div>
-        <div class="card__resposta" bis_skin_checked="1">
+        <div class="card__resposta">
           <h2>
             Você notou uma melhoria na qualidade dos nossos produtos ?
           </h2>
-          <div class="resposta__gradeContainer" bis_skin_checked="1">
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">Sim, significativamente</p>
             </div>
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">Não, não percebi qualidade notáveis</p>
             </div>
           </div>
@@ -129,46 +133,46 @@
         </button>
       </div>
 
-      <div class="card pergunta03" id="pergunta03" style="display: none" bis_skin_checked="1">
-        <div class="card__logo" bis_skin_checked="1">
-          <img src="./033.jpg" alt="">
+      <div class="card pergunta03" id="pergunta03" style="display: none">
+        <div class="card__logo">
+          <img src="images/033.jpg" alt="">
         </div>
-        <div class="card__satisfacao" bis_skin_checked="1">
+        <div class="card__satisfacao">
           <h2>De 0 a 5. Os produtos Ambev atenderam suas expectativas ?</h2>
-          <div class="card__gradeContainer" bis_skin_checked="1">
-            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)" bis_skin_checked="1">
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star1"></i>
             </div>
-            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star2"></i>
             </div>
-            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star3"></i>
             </div>
-            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star4"></i>
             </div>
-            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star5"></i>
             </div>
           </div>
-          <div class="card__gradeDescricao" bis_skin_checked="1">
+          <div class="card__gradeDescricao">
             <p>Muito ruim</p>
             <p>Muito bom</p>
           </div>
         </div>
-        <div class="card__resposta" bis_skin_checked="1">
+        <div class="card__resposta">
           <h2>          </h2><h2>Como você avalia a textura e a qualidade dos  nossos produtos?</h2>
           
-          <div class="resposta__gradeContainer" bis_skin_checked="1">
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">Desagradável</p>
             </div>
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">Neutro</p>
             </div>
 
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">Agradável</p>
             </div>
 
@@ -179,41 +183,41 @@
         </button>
       </div>
 
-      <div class="card pergunta04" id="pergunta04" style="display: none" bis_skin_checked="1">
-        <div class="card__logo" bis_skin_checked="1">
-          <img src="./123.webp" alt="">
+      <div class="card pergunta04" id="pergunta04" style="display: none">
+        <div class="card__logo">
+          <img src="images/123.webp" alt="">
         </div>
-        <div class="card__satisfacao" bis_skin_checked="1">
+        <div class="card__satisfacao">
           <h2>De 0 a 5, Quanto você recomendaria os Produtos da Ambev para uma amigo(a) ou colega?</h2>
-          <div class="card__gradeContainer" bis_skin_checked="1">
-            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)" bis_skin_checked="1">
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star1"></i>
             </div>
-            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star2"></i>
             </div>
-            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star3"></i>
             </div>
-            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star4"></i>
             </div>
-            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)" bis_skin_checked="1">
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
               <i class="fa-regular fa-star" id="star5"></i>
             </div>
           </div>
-          <div class="card__gradeDescricao" bis_skin_checked="1">
+          <div class="card__gradeDescricao">
             <p>Muito ruim</p>
             <p>Muito bom</p>
           </div>
         </div>
-        <div class="card__resposta" bis_skin_checked="1">
+        <div class="card__resposta">
           <h2>O que você espera da Ambev no futuro?</h2>
-          <div class="resposta__gradeContainer" bis_skin_checked="1">
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">Mais lojas e acessibilidade</p>
             </div>
-            <div class="resposta__grade resposta1" onclick="toggleResponse(this, &#39;resposta1&#39;)" bis_skin_checked="1">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
               <p onclick="scrollToDown()">Novas parcerias e linhas temáticas exclusivas</p>
             </div>
           </div>
@@ -222,15 +226,73 @@
           Enviar avaliação
         </button>
       </div>
-      
-      <div class="card finalizacao" id="finalizacao" style="display: none" bis_skin_checked="1">
-        <div class="finalizacao__titulo" bis_skin_checked="1">
+
+      <div class="card pergunta05" id="pergunta05" style="display: none">
+        <div class="card__logo">
+          <img src="cacau5.html" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>
+            De 0 a 5, quão entusiasmado(a) você estaria por novos produtos inovadores da Cacau Show?
+          </h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Se você pudesse criar um novo produto para a Cacau Show, ele seria:
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Uma linha de chocolates inspirados em destinos exóticos</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Uma coleção de chocolates dos Ursinhos Carinhosos</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>O que você espera da Cacau Show no futuro?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Mais lojas e acessibilidade</p>
+            </div>
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Novas parcerias e linhas temáticas exclusivas</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta05()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+      <div class="card finalizacao" id="finalizacao" style="display: none">
+        <div class="finalizacao__titulo">
           <h1>PARABÉNS!</h1>
         </div>
-        <div class="finalizacao__trofeu" bis_skin_checked="1">
-          <img src="./ab8cb31a-368c-4ad0-a374-5829f551db49.jpg" alt="">
+        <div class="finalizacao__trofeu">
+          <img src="images/ab8cb31a-368c-4ad0-a374-5829f551db49.jpg" alt="">
         </div>
-        <div class="finalizacao__descricao" bis_skin_checked="1">
+        <div class="finalizacao__descricao">
           <p>
             Parabéns por concluir nossa avaliação da Ambev! Como agradecimento, você ganhou um 
             <b>Kit Churrasco - Ambev</b>! Clique no botão <b>RESGATAR</b> abaixo para
@@ -241,17 +303,17 @@
 
           </p>
         </div>
-        <div class="finalizacao__botao" bis_skin_checked="1">
-          <a href="https://alertanovidades.online/abv/"><button><i class="fa-solid fa-gift"></i>  RESGATAR</button></a>
+        <div class="finalizacao__botao">
+          <a href="https://quizpremiadobrasil.online/resgateamb/"><button><i class="fa-solid fa-gift"></i>  RESGATAR</button></a>
         </div>
       </div>
   
       <button data-bs-toggle="modal" data-bs-target="#modal01" id="popup" style="display: none"></button>
 
-      <div class="modal show" tabindex="-1" id="modal01" aria-modal="true" role="dialog" style="display: block;" bis_skin_checked="1">
-        <div class="modal-dialog modal-dialog-centered" bis_skin_checked="1">
-          <div class="modal-content" bis_skin_checked="1">
-            <div class="card apresentacao" bis_skin_checked="1">
+      <div class="modal" tabindex="-1" id="modal01">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="card apresentacao">
               <h2>
                 🎉 Quiz Exclusivo Ambev! 🎉
               </h2>
@@ -265,45 +327,72 @@
       </div>
     </main>
 
-    <script src="./hideAllExcept.js.download"></script>
-    <script src="./selectedCard.js.download"></script>
-    <script src="./selectedResponse.js.download"></script>
-    <script src="./buttonCheck.js.download"></script>
-    <script src="./popup.js.download"></script>
-    <script src="./sendResponse.js.download"></script>
-    
-    
-    
-    
- 
+    <script src="js/hideAllExcept.js"></script>
+    <script src="js/selectedCard.js"></script>
+    <script src="js/selectedResponse.js"></script>
+    <script src="js/buttonCheck.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/sendResponse.js"></script>
     
     <script>
-        
-        document.addEventListener("DOMContentLoaded", function () {
-    // Adiciona um event listener para o botão "COMEÇAR"
-    var botaoComecar = document.querySelector("#modal01 button[data-bs-dismiss='modal']");
-    if (botaoComecar) {
-        botaoComecar.addEventListener("click", function () {
-            // Coloque aqui o código que deseja executar ao clicar no botão "COMEÇAR"
-            console.log("O botão 'COMEÇAR' foi clicado!");
-            // Por exemplo, se você quiser chamar a função popup() quando o botão for clicado, você pode fazer:
-            // popup();
-            // Fechar o modal manualmente após o clique no botão "COMEÇAR"
-            var modal = document.getElementById("modal01");
-            modal.style.display = "none";
-            var modalBackdrop = document.querySelector(".modal-backdrop");
-            modalBackdrop.style.display = "none";
-            document.body.classList.remove("modal-open");
+        document.addEventListener("DOMContentLoaded", function() {
+    var botao = document.getElementById("proximaPagina");
+    botao.addEventListener("click", function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var parametros = {};
+        urlParams.forEach(function(value, key) {
+            if (key.startsWith('utm_')) {
+                parametros[key] = value;
+            }
         });
-    } else {
-        console.error("O botão 'COMEÇAR' não foi encontrado.");
-    }
+        
+        var queryString = new URLSearchParams(parametros).toString();
+
+        if (queryString) {
+            var proximaPagina = "https://quizpremiadobrasil.online/resgateamb/" + queryString;
+            window.location.href = proximaPagina;
+        } else {
+            console.log("Nenhum parâmetro 'utm_' encontrado na URL.");
+            // Trate o caso em que os parâmetros 'utm_' não estão presentes na URL
+        }
+    });
 });
 
-        
     </script>
     
+    <script>
+      $(document).ready(function () {
+        let data = new Date();
 
+        var date = data.getDate();
+        var month = [
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho",
+          "Agosto",
+          "Setembro",
+          "Outubro",
+          "Novembro",
+          "Dezembro",
+        ][data.getMonth()];
+        var year = data.getFullYear();
+
+        $("#todayDate").html(`${date} de ${month} de ${year}**`);
+      });
+    </script>
+    <script type="text/javascript" src="js/crypto-js.min.js"></script>
+
+    <script>
+      var popup = document.getElementById("popup");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        popup.click();
+      });
+    </script>
  
 
-<div class="modal-backdrop show" bis_skin_checked="1"></div></body></html>
+</body></html>
