@@ -29,7 +29,58 @@
 <link rel="shortlink" href="https://seguridade.pro/?p=820">
 <link rel="alternate" type="application/json+oembed" href="https://seguridade.pro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fseguridade.pro%2Finicio%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://seguridade.pro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fseguridade.pro%2Finicio%2F&amp;format=xml">
-<!-- HFCM by 99 Robots - Snippet # 1: Pixel face -->
+<script>
+  // NEMU
+  function onLoad() {
+    var links = document.getElementsByTagName("a");
+    var trackingParams = [
+      "utm_source",
+      "utm_campaign",
+      "utm_medium",
+      "utm_content",
+      "utm_term",
+      "src",
+      "sck",
+    ];
+
+    for (var i = 0, n = links.length; i < n; i++) {
+      if (links[i].href.includes("#")) {
+        continue;
+      }
+
+      var link = new URL(links[i].href);a
+
+      for (let i = 0; i < trackingParams.length; i++) {
+        link.searchParams.delete(trackingParams[i]);
+      }
+
+      var href =
+        link.href.trim() +
+        (link.href.indexOf("?") > 0 ? "&" : "?") +
+        document.location.search.replace("?", "").toString();
+      links[i].href = href;
+    }
+  }
+
+  setInterval(onLoad, 500);
+</script><script src="https://trackings.nemu.com.br/trackings/script.js" async data-tracking-id="xAwxrdvGEQ" crossorigin="anonymous"></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '779472374050032');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=779472374050032&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 
 
